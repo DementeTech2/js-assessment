@@ -13,5 +13,16 @@ flowControlAnswers = {
    */
   fizzBuzz: function fizzBuzz(num) {
 
+    if(isNaN(num)) return false;
+
+    let by3 = !(num % 3);
+    let by5 = !(num % 5);
+
+    if( by3 && by5 ) return "fizzbuzz";
+    if( by3 ) return "fizz";
+    if( by5 ) return "buzz";
+
+    return num;
+
   },
 };
