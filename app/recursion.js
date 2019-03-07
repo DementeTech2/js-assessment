@@ -37,8 +37,7 @@ recursionAnswers = {
       return files;
     }
 
-    ret = fnf(data, dirName)
-    console.log(ret);
+    ret = fnf(data, dirName);
     return ret;
 
   },
